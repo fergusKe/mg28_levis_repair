@@ -1,0 +1,118 @@
+@import 'helpers/mixins';
+
+.wrap {
+	padding-bottom: 0;
+}
+
+a {
+	color: #000;
+}
+
+.case-row {
+	// @include clearfix;
+	position: relative;
+	.title {
+		// float: left;
+	}
+	.value {
+		position: absolute;
+		top: -2px;
+		left: 108px;
+		width: 230px;
+		// float: left;
+		// vertical-align: top;
+		// margin-left: 22px;
+	}
+	&.num {
+		.title {
+
+		}
+		.value {
+			font-size: 40px;
+			top: -11px;
+			font-family: "NotoSansTC-Bold";
+		}
+	}
+	&.date {
+		.value {
+			font-size: 28px;
+		}
+	}
+	&.type {
+		.value {
+			font-size: 28px;
+		}
+	}
+	& ~ .case-row {
+		margin-top: 22px;
+	}
+}
+.title {
+	// 案件編號
+	font-size: 22px;
+	color: #a2a2a2;
+}
+
+
+.page-title-group {
+	// padding-bottom: 40px;
+  // border-bottom: 1px solid #FFF;
+}
+
+.search {
+	width: 548px;
+	// height: 60px;
+	margin: 30px auto 40px;
+	font-size: 0;
+	input {
+		display: inline-block;
+		vertical-align: top;
+		width: 480px;
+		height: 60px;
+		font-size: 28px;
+		padding-left: 15px;
+	}
+	.search-btn {
+		display: inline-block;
+		vertical-align: top;
+		width: 68px;
+		height: 60px;
+		background: #000 url('../images/search/icon-search.png') 50% 50% no-repeat;
+	}
+}
+
+.row {
+	height: 93px;
+	& ~ .row {
+		margin-top: 24px;
+	}
+}
+
+
+.case-group {
+	background: #FFF;
+	margin-top: -1px;
+	.case-text {
+		float: left;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		top: 8px;
+	}
+	.case-status {
+		float: right;
+		display: inline-block;
+		vertical-align: top;
+	}
+	a {
+		@include clearfix;
+		padding: 28px 47px;
+	}
+	&:nth-child(even) {
+		background: #ebebeb;
+	}
+}
+
+.case-group:before {
+	display: none;
+}

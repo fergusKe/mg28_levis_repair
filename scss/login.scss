@@ -1,0 +1,55 @@
+.container {
+	padding-left: 58px;
+	padding-right: 58px;
+}
+
+.login-logo {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.input-group {
+	position: relative;
+	display: table;
+	border-collapse: separate;
+
+	width: 100%;
+	border-bottom: 1px solid #FFF;
+	padding-bottom: 22px;
+	.input-group-addon {
+		display: table-cell;
+		// display: inline-block;
+		// vertical-align: top;
+	}
+	.form-control {
+		display: table-cell;
+		// display: inline-block;
+		// vertical-align: top;
+		font-size: 28px;
+		width: 100%;
+		border: none;
+		background: none;
+		color: #FFF;
+		outline: none;
+	}
+	&.account {
+		margin-top: 110px;
+	}
+	&.password {
+		margin-top: 80px;
+	}
+}
+
+.submit-btn {
+	a {
+		width: 100%;
+		padding: 25px 0;
+		border-radius: 10px;
+		background: #000;
+		color: #FFF;
+		text-align: center;
+		font-size: 28px;
+		margin-top: 70px;
+		letter-spacing: 6px;
+	}
+}

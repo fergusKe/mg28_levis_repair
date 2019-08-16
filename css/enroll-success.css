@@ -1,0 +1,25 @@
+.notice {
+  margin-top: 42px; }
+
+.enroll-num {
+  font-family: "NotoSansTC-Bold"; }
+
+.submit-btn a {
+  width: 100%;
+  padding: 25px 0;
+  border-radius: 10px;
+  background: #000;
+  color: #FFF;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 70px;
+  letter-spacing: 6px; }
+
+.main {
+  padding: 0 47px; }
+  .main .text {
+    font-size: 28px;
+    color: #FFF;
+    text-align: center;
+    line-height: 42px;
+    margin-top: 138px; }
